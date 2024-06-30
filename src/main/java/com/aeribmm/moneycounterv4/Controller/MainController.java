@@ -20,12 +20,6 @@ public class MainController {
 
     UserServiceImpl serviceDB;
 
-
-    @GetMapping("/home")
-    public String check(){
-        return "zalupa";
-    }
-
     @GetMapping("/findAll")
     public List<UserModel> findAllUsers(){
         return serviceDB.findAllFromMemory();
